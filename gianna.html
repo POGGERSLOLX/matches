@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianna's Matches!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+            width: 150px;
+        }
+        .gallery-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Variable for the heading and image captions
+        let variable = Funny Guy";
+
+        // Display the main heading
+        document.write(`<h1>Gianna Connell's Top Featured Tinder Matches!</h1>`);
+
+        // List of image URLs
+        const imageUrls = [
+            "https://i.pinimg.com/originals/44/71/89/447189208c181d0969e3b2f974556ae2.jpg",
+            "https://i.pinimg.com/736x/2f/fd/2a/2ffd2af47e1647ed1fe9cc3dd15aabc0.jpg",
+            "https://content.imageresizer.com/images/memes/Crying-Black-Guy-meme-9.jpg",
+            "https://pbs.twimg.com/media/Bqa-go5CMAAebSy.jpg",
+            "https://rollingout.com/wp-content/uploads/2018/11/charles-mcdowell-2-1200x630.jpg",
+            "https://img.freepik.com/free-photo/african-american-man-looking-job-unusual-places-his-home_155003-10376.jpg",
+            "https://tse4.mm.bing.net/th/id/OIP.K870JrRdmYxvl_TFvYvRwwHaKs?w=126&h=182&c=7&r=0&o=5&pid=1.7",
+            "https://th.bing.com/th/id/OIP.TV1Ak6uViOPGyMu4j3BFXAAAAA?rs=1&pid=ImgDetMain",
+            "https://tse2.mm.bing.net/th/id/OIP.g_LWxXNcLpsB1FKW11-JEAHaJQ?w=144&h=182&c=7&r=0&o=5&pid=1.7",
+            "https://tse1.mm.bing.net/th/id/OIP.6nDu0p6RwW2arJTCOU2pCQHaDt?w=349&h=174&c=7&r=0&o=5&pid=1.7",
+            "https://tse1.mm.bing.net/th/id/OIP.e2IgOg7GPVeMf4ewvDCRegHaMX?w=117&h=180&c=7&r=0&o=5&pid=1.7",
+            "https://tse2.mm.bing.net/th/id/OIP.K85vzLppv_1ixC7hornACAHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7",
+            "https://tse4.mm.bing.net/th/id/OIP.c8CyM8dd5pP0H7BsJgce9wHaFj?w=243&h=182&c=7&r=0&o=5&pid=1.7",
+            "https://tse3.mm.bing.net/th/id/OIP.tKU5_BlDTDJMfUD9btisswHaLH?w=194&h=291&c=7&r=0&o=5&pid=1.7",
+            "https://tse3.mm.bing.net/th/id/OIP.UcuPtQuURhTvzgl34U5tIQHaHa?w=182&h=180&c=7&r=0&o=5&pid=1.7",
+            "https://i.pinimg.com/originals/dc/c1/4c/dcc14c538d855777567e55630c883baf.jpg",
+            "https://us-tuna-sounds-images.voicemod.net/b1084111-9188-46fd-aede-d8b788879876-1681290395815.jpg",
+            "https://us-tuna-sounds-images.voicemod.net/0f4a8794-a1a2-47cd-8eda-cdf8b08e4402-1668339009379.jpeg",
+            "https://us-tuna-sounds-images.voicemod.net/57a8dc1a-b182-4237-a960-efe73347e159-1660366710394.jpg",
+            "https://i.pinimg.com/originals/91/80/8a/91808aeef95498d1a2bfe24e80b706da.jpg",
+            "https://www.memesmonkey.com/images/memesmonkey/45/4583f5739b38db882e5e1bf5b1a446d4.jpeg",
+            "https://www.memesmonkey.com/images/memesmonkey/eb/eb2f30a92e6c1724de4fec30f338ff7c.jpeg",
+            "https://www.memesmonkey.com/images/memesmonkey/6d/6da8b26cd6d82bad34473cdb66f26ba4.jpeg",
+            "https://www.memesmonkey.com/images/memesmonkey/77/77b53864013e468839ace14fd64468c3.jpeg",
+            "https://i.imgflip.com/51vis7.png",
+            "https://www.meme-arsenal.com/memes/199ec37a508e06789c7159c99bd9883a.jpg",
+            "https://cdn.ebaumsworld.com/mediaFiles/picture/2183782/84419444.jpg",
+            "https://th.bing.com/th/id/OIP.8_6fYhczq-jygZkS4xydMgAAAA?rs=1&pid=ImgDetMain",
+            "https://i.pinimg.com/originals/d4/96/02/d496023016cb398ed61da07ef35948b6.png",
+            "https://smartcdn.gprod.postmedia.digital/nationalpost/wp-content/uploads/2015/11/ugly.jpg",
+            "https://uberhumor.com/wp-content/uploads/2014/05/WeirdBuff.jpg",
+            "https://i.pinimg.com/originals/c8/cd/8e/c8cd8eb3c08b21ed6777bd3cc46e73f8.jpg"
+        ];
+
+        // Display images with captions
+        document.write('<div class="gallery">');
+        imageUrls.forEach((url, index) => {
+            document.write(`
+                <div class="gallery-item">
+                    <img src="${url}" alt="Image ${index + 1}">
+                    <p>${variable} ${index + 1}</p>
+                </div>
+            `);
+        });
+        document.write('</div>');
+    </script>
+</body>
+</html>
